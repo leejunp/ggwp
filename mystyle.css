@@ -3,4 +3,69 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  margin: 0;
+  text-decoration: none;
+}
+
+/*menu bar*/
+
+li a{
+  text-decoration: none;
+  color:black;
+}
+
+li a:hover{
+  text-decoration: none;
+  color:gray;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow: -6px 0px 6px rgba(0, 0, 0, 0.2);
+  right:0;
+  width:80px;
+}
+
+li{
+  transform:rotate(90deg);
+  margin-top:70px;
+}
+
+#rest{
+  margin-top:100px;
+}
+
+#rest1{
+  margin-top:130px;
+}
+
+.circle{
+  background-color: #484848;
+  height:30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+#first{
+  margin-top: 370px;
+}
+
+.icon{
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+  visibility: hidden;
+}
+
+#first:hover .icon{
+  visibility: visible;
 }
