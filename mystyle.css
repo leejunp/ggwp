@@ -7,19 +7,24 @@ body{
   text-decoration: none;
 }
 
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
 /*menu bar*/
 
-li a{
+.side a{
   text-decoration: none;
   color:black;
 }
 
-li a:hover{
+.side a:hover{
   text-decoration: none;
-  color:gray;
+  color:#E55E5E;
 }
 
-ul {
+#menu2 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -30,11 +35,13 @@ ul {
   box-shadow: -6px 0px 6px rgba(0, 0, 0, 0.2);
   right:0;
   width:80px;
+  z-index: 100;
 }
 
-li{
+.side{
   transform:rotate(90deg);
   margin-top:70px;
+  font-size: 20px;
 }
 
 #rest{
@@ -52,20 +59,116 @@ li{
   border-radius: 50%;
   margin-bottom: 10px;
   margin-left: 25px;
+  cursor: pointer;
 }
 
 #first{
-  margin-top: 370px;
+  margin-top: 22vw;
 }
 
 .icon{
-  text-align: center;
   color:white;
   font-weight: bold;
   font-size: 18px;
   visibility: hidden;
+  margin-top:2px;
+  margin-left: 7px;
+  position: absolute;
 }
 
 #first:hover .icon{
   visibility: visible;
+}
+
+/*box*/
+
+.box{
+  margin:0 auto;
+  padding:0;
+  background-color:#484848;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+}
+
+/*logo*/
+
+.logo{
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 40px;
+  position: absolute;
+  color:  white;
+}
+
+.wp{
+  margin-top:-38px;
+  font-size: 28px;
+}
+
+.gg{
+  letter-spacing: 1px;
+}
+
+/*frontpage*/
+
+.mainhead{
+  color: white;
+  font-size: 4.1vw;
+  margin-top:50%;
+  margin-left:40px;
+  line-height: 1;
+}
+
+.links, .social{
+  text-decoration: none;
+}
+
+.links{
+  list-style-type: none;
+  margin-left: 40px;
+  margin-top: -2vw;
+  padding: 0;
+  position: fixed;
+  overflow: auto;
+  color: white;
+  width: 28vw;
+}
+
+.social{
+  float:left;
+  margin-left: 23px;
+  font-weight: lighter;
+}
+
+#soone{
+  margin-left: 0px;
+}
+
+.line{
+  float: left;
+  border-left: 2px solid white;
+  height: 25px;
+  margin-left: 1.4vw;
+}
+
+.social:hover{
+  color:#E55E5E;
+}
+
+.mainbod{
+  width:28vw;
+  margin-left: 40px;
+  margin-top:150px;
+  color:white;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.tracer{
+  position: absolute;
+  z-index: 99;
+  width: 70vw;
+  margin-top:3vw;
+  margin-left: 28vw;
 }
