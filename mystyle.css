@@ -35,7 +35,7 @@ a{
   box-shadow: -6px 0px 6px rgba(0, 0, 0, 0.2);
   right:0;
   width:80px;
-  z-index: 100;
+  z-index: 5;
 }
 
 .side{
@@ -60,10 +60,14 @@ a{
   margin-bottom: 10px;
   margin-left: 25px;
   cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  margin-top: 370px;
+  border: none;
 }
 
-#first{
-  margin-top: 22vw;
+#subtwo{
+  margin-top:410px;
 }
 
 .icon{
@@ -71,13 +75,128 @@ a{
   font-weight: bold;
   font-size: 18px;
   visibility: hidden;
-  margin-top:2px;
-  margin-left: 7px;
+  margin-top:-10px;
   position: absolute;
 }
 
-#first:hover .icon{
+#sub:hover .icon{
   visibility: visible;
+}
+
+/*popup*/
+
+#popupToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 863px;
+  left: 19px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  z-index: 2;
+
+  -webkit-touch-callout: none;
+}
+
+#pop{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 6;
+  display: none;
+
+}
+
+.popbox{
+  height: 20vw;
+  width: 40vw;
+  background-color: white;
+  margin: 0 auto;
+  top:50%;
+  left:50%;
+  margin: -12.5vw 0 0 -20vw;
+  position: absolute;
+  display: block;
+  z-index: 7;
+  box-shadow:2vw 2vw 2vw rgba(0, 0, 0, 0.2);
+}
+
+#popred{
+  background-color:#E55E5E;
+  display: none;
+}
+
+#error{
+  color: white;
+}
+
+#sad{
+  display: none;
+}
+
+.news{
+  margin-left: 3vw;
+  margin-top:5vw;
+  font-size: 2.3vw;
+  color: #484848;
+}
+
+#mail{
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #484848;
+  outline:none;
+  width: 33vw;
+  margin-left: 3vw;
+  margin-top:2vw;
+  font-size: 1.5vw;
+}
+
+.submit{
+  width:8vw;
+  height: 3vw;
+  background-color: #484848;
+  border: none;
+  color: white;
+  padding: 0.5vw 2vw;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.2vw;
+  margin: 4px 2px;
+  cursor: pointer;
+  right:0;
+  bottom:0;
+  position: absolute;
+  margin:0;
+}
+
+.submit:hover{
+  color:#E55E5E;
+}
+
+.cancelpop{
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 1.3vw;
+  position: absolute;
+  bottom: 0.7vw;
+  right:10vw;
+  color: #E8E8E8;
+  cursor: pointer;
+}
+
+.cancelpop:hover{
+  color: #D1D1D1;
+}
+
+#hiddennews, #close{
+  display: none;
 }
 
 /*box*/
@@ -110,6 +229,10 @@ a{
   letter-spacing: 1px;
 }
 
+#bl{
+  color: black;
+}
+
 /*frontpage*/
 
 .mainhead{
@@ -129,7 +252,6 @@ a{
   margin-left: 40px;
   margin-top: -2vw;
   padding: 0;
-  position: fixed;
   overflow: auto;
   color: white;
   width: 28vw;
@@ -167,7 +289,7 @@ a{
 
 .tracer{
   position: absolute;
-  z-index: 99;
+  z-index: 4;
   width: 70vw;
   margin-top:3vw;
   margin-left: 28vw;
