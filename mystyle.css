@@ -69,11 +69,6 @@ a{
 
 #subtwo{
   margin-top:410px;
-  transition: all 1s ease;
-}
-
-#sub{
-  transition: all 1s ease;
 }
 
 .icon{
@@ -187,6 +182,7 @@ a{
   bottom:0;
   position: absolute;
   margin:0;
+  transition: color 0.5s ease;
 }
 
 .submit:hover{
@@ -203,6 +199,7 @@ a{
   right:10vw;
   color: #E8E8E8;
   cursor: pointer;
+  transition: color 0.5s ease;
 }
 
 .cancelpop:hover{
@@ -267,6 +264,7 @@ a{
   bottom:0;
   position: absolute;
   margin:0;
+  transition: color 0.5s ease;
 }
 
 .submittwo:hover{
@@ -283,6 +281,14 @@ a{
   right:10vw;
   color: #E8E8E8;
   cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.newstwo{
+  margin-left: 3vw;
+  margin-top:5vw;
+  font-size: 2.3vw;
+  color: #484848;
 }
 
 #popredtwo{
