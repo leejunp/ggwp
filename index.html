@@ -22,18 +22,19 @@
             <p class="icon">@</p>
         </button>
 
-        <button type="button" class="circle" id="subtwo" onclick="myOpentwo()">
-            <p class="icon">@</p>
+        <button type="button" class="circle" id="subtwo" onclick="myOpenTwo()">
+            <p class="icon" id="sutw">!</p>
         </button>
-
 
       </ul>
     </div>
 
+
+
     <div id="pop">
       <div class="popbox">
         <h2 class="news">Subscribe to our newsletter!</h2>
-        <h2 class="news" id="hiddennews">Thanks! </br>No spam, we promise :)</h2>
+        <h2 class="news" id="hiddennews">Thanks!</br>No spam, we promise. </br></br>(ﾉ^ヮ^)ﾉ*:・ﾟ✧</h2>
         <input type="email" id="mail" value="" placeholder="Enter your e-mail">
 
         <button type="button" class="submit" onclick="mySubmit()">Submit</button>
@@ -43,16 +44,38 @@
 
       </div>
       <div class="popbox" id="popred">
-        <h2 class="news" id="error">You gotta type something </br>in you dummy.</h2>
+        <h2 class="news" id="error">You gotta type something </br>you dummy.</h2>
       </div>
 
       <div class="popbox" id="sad">
         <h2 class="news" id="yousure">Are you sure...? </br>
         ( ˃̶͈ ̯ ̜ ˂̶͈ˊ ) ︠³</h2>
-        <button type="button" class="submit" id="goback" onclick="myBack()">Nope</button>
-        <button type="button" class="cancelpop" onclick="myBye()">Yep</button>
+        <button type="button" class="submittwo" id="goback" onclick="myBack()">Nope</button>
+        <button type="button" class="cancelpoptwo" onclick="myBye()">Yep</button>
       </div>
     </div>
+
+
+
+    <div id="poptwo">
+      <div class="popboxtwo">
+        <h2 class="news" id="ntwo">Report a bug ∑(;°Д°)</h2>
+        <h2 class="news" id="hiddennewstwo">Thanks for letting us know!</br></br>We're not Bluehole, </br>we actually fix things. (*•̀ᴗ•́*)و ̑̑</h2>
+        <textarea id="bug" value="" placeholder="What's the problem?"></textarea>
+
+        <div class="popboxtwo" id="popredtwo">
+          <h2 class="news" id="error">You gotta type something </br>you dummy.</h2>
+        </div>
+
+        <button type="button" class="submit" id="sutwo" onclick="mySubmittwo()">Submit</button>
+        <button type="button" class="cancelpop" id="cantwo" onclick="myCanceltwo()">Cancel</button>
+
+        <button type="button" class="submit" id="closetwo" onclick="myCloseAlltwo()">Close</button>
+
+    </div>
+  </div>
+
+
 
     <img class="tracer" src="Images/Tracer.png" alt="Tracer">
 

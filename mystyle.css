@@ -79,11 +79,19 @@ a{
   position: absolute;
 }
 
+#sutw{
+  margin-left: 5.5px;
+}
+
 #sub:hover .icon{
   visibility: visible;
 }
 
-/*popup*/
+#subtwo:hover .icon{
+  visibility: visible;
+}
+
+/*popup one*/
 
 #popupToggle input{
   display: block;
@@ -108,7 +116,6 @@ a{
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 6;
   display: none;
-
 }
 
 .popbox{
@@ -198,6 +205,92 @@ a{
 #hiddennews, #close{
   display: none;
 }
+
+/*popup two*/
+
+#poptwo{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 6;
+  display: none;
+}
+
+.popboxtwo{
+  height: 40vw;
+  width: 40vw;
+  background-color: white;
+  margin: 0 auto;
+  top:50%;
+  left:50%;
+  margin: -20vw 0 0 -20vw;
+  position: absolute;
+  display: block;
+  z-index: 7;
+  box-shadow:2vw 2vw 2vw rgba(0, 0, 0, 0.2);
+}
+
+#bug{
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #484848;
+  outline:none;
+  width: 33vw;
+  height: 22vw;
+  margin-left: 3vw;
+  margin-top:2vw;
+  font-size: 1.5vw;
+}
+
+.submittwo{
+  width:8vw;
+  height: 3vw;
+  background-color: #484848;
+  border: none;
+  color: white;
+  padding: 0.5vw 2vw;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.2vw;
+  margin: 4px 2px;
+  cursor: pointer;
+  right:0;
+  bottom:0;
+  position: absolute;
+  margin:0;
+}
+
+.submittwo:hover{
+  color:#E55E5E;
+}
+
+.cancelpoptwo{
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 1.3vw;
+  position: absolute;
+  bottom: 0.7vw;
+  right:10vw;
+  color: #E8E8E8;
+  cursor: pointer;
+}
+
+#popredtwo{
+  background-color:#E55E5E;
+  display: none;
+}
+
+#hiddennewstwo{
+  display:none;
+}
+
+#closetwo{
+  display: none;
+}
+
 
 /*box*/
 
