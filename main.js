@@ -17,6 +17,12 @@ function myBack(){
   $("#sad").fadeOut(700);
 }
 
+function myCloseAll(){
+  $("#pop").fadeOut(700);
+  $("#hiddennews").fadeout(700);
+  $(".popbox").fadeout(700);
+}
+
 function mySubmit() {
   if($("#mail").val().length > 0){
     $(".news").fadeOut(700);
