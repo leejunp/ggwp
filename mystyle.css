@@ -10,6 +10,7 @@ body{
 a{
   text-decoration: none;
   color:inherit;
+  transition: color 0.5s ease;
 }
 
 /*menu bar*/
@@ -68,15 +69,21 @@ a{
 
 #subtwo{
   margin-top:410px;
+  transition: all 1s ease;
+}
+
+#sub{
+  transition: all 1s ease;
 }
 
 .icon{
   color:white;
   font-weight: bold;
   font-size: 18px;
-  visibility: hidden;
+  opacity: 0;
   margin-top:-10px;
   position: absolute;
+  transition: all 0.5s ease;
 }
 
 #sutw{
@@ -84,11 +91,11 @@ a{
 }
 
 #sub:hover .icon{
-  visibility: visible;
+  opacity: 1;
 }
 
 #subtwo:hover .icon{
-  visibility: visible;
+  opacity: 1;
 }
 
 /*popup one*/
