@@ -402,6 +402,79 @@ a{
   margin-left: 28vw;
 }
 
+/*Upcoming Page*/
+
+#subpageh{
+  color:black;
+  margin-top:10vw;
+  position: absolute;
+}
+
+.upgames{
+  width:90vw;
+  height: 27vw;
+  background-color: white;
+  position: absolute;
+  margin-top: 20vw;
+  margin-bottom: 20vw;
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  display: inline-block;
+}
+
+.upgames:hover{
+  margin-left: 40px;
+}
+
+.upgamesi{
+  padding:3.5vw;
+  width:35vw;
+  position: absolute;
+}
+
+.upgamesbod{
+  width: 45vw;
+  margin-left:42vw;
+  margin-top:3vw;
+}
+
+.upgamesp{
+  margin-top: 2.5vw;
+  line-height: 35px;
+}
+
+.upgamesa{
+  float: left;
+  display: block;
+  position: absolute;
+  right:5vw;
+  bottom:3vw;
+  color:#E55E5E;
+}
+
+.upgamesa::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #E55E5E;
+    transition: width .3s;
+}
+
+.upgamesa:hover::after {
+    width: 100%;
+}
+
+#upsecond{
+  margin-top:50vw;
+  margin-bottom: 20vw;
+}
+
+#upthird{
+  margin-top:80vw;
+  margin-bottom: 20vw;
+}
+
 /*game search engin*/
 
 .searchengin{

@@ -147,7 +147,7 @@ function autocomplete(inp, arr) {
       closeAllLists(e.target);
       });
 }
-
+/*figure out how to make this shit work*/
 var countries = ["League of Legends","Overwatch","PUBG"];
 autocomplete(document.getElementById("myInput"), countries);
 
