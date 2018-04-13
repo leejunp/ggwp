@@ -6,7 +6,7 @@ function myOpen() {
 }
 
 function myCancel() {
-  $("#sad").fadeIn(700);
+  $("#sad").fadeIn(100);
 }
 
 function myBye() {
@@ -36,12 +36,12 @@ function mySubmit() {
     setTimeout(function(){
       $("#hiddennews").fadeIn(700);
       $("#close").fadeIn(700);
-    },1000);
+    },800);
   }
   else{
-    $("#popred").fadeIn(700);
+    $("#popred").fadeIn(200);
     setTimeout(function(){
-      $("#popred").fadeOut(700);
+      $("#popred").fadeOut(200);
     },3000);
   }
 }
@@ -61,12 +61,12 @@ function mySubmittwo() {
     setTimeout(function(){
       $("#hiddennewstwo").fadeIn(700);
       $("#closetwo").fadeIn(700);
-    },1000);
+    },800);
   }
   else{
-    $("#popredtwo").fadeIn(700);
+    $("#popredtwo").fadeIn(200);
     setTimeout(function(){
-      $("#popredtwo").fadeOut(700);
+      $("#popredtwo").fadeOut(200);
     },3000);
   }
 }
@@ -78,3 +78,99 @@ function myCanceltwo(){
 function myCloseAlltwo(){
   $("#poptwo").fadeOut(700);
 }
+
+/*search engin*/
+function autocomplete(inp, arr) {
+  var currentFocus;
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      this.parentNode.appendChild(a);
+      for (i = 0; i < arr.length; i++) {
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          b = document.createElement("DIV");
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          b.addEventListener("click", function(e) {
+              inp.value = this.getElementsByTagName("input")[0].value;
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        currentFocus++;
+        addActive(x);
+      } else if (e.keyCode == 38) {
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+      });
+}
+
+var countries = ["League of Legends","Overwatch","PUBG"];
+autocomplete(document.getElementById("myInput"), countries);
+
+function openWindow(e){
+  event.preventDefault();
+  if($("#myInput").val()=="League of Legends"){
+    /*window.location.href = "index3-1.html";*/
+    var winwin= window.open("index3-1.html");
+  }
+  if($("#myInput").val()=="Overwatch"){
+    var winwin= window.open("index3-2.html");
+  }
+  if($("#myInput").val()=="PUBG"){
+    var winwin= window.open("index3-3.html");
+  }
+  else{
+    /*window.location.href="index3-4.html";*/
+    var winwin= window.open("index3-4.html");
+  }
+}
+
+$("#myInput").keyup(function(event) {
+    if (event.keyCode === 13 && $("#myInput").val().length > 0) {
+        $(".search").click();
+    }
+});

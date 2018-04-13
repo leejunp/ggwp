@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>GGWP</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-responsive.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <ul id="menu2">
+        <li class="side"><a href="index2.html">Upcoming</a></li>
+        <li class="side" id="rest1"><a href="index3.html">Games</a></li>
+        <li class="side" id="rest"><a href="index4.html">News</a></li>
+        <li class="side" id="rest"><a href="index5.html">About</a></li>
+
+
+        <button type="button" class="circle" id="sub" onclick="myOpen()">
+            <p class="icon">@</p>
+        </button>
+
+        <button type="button" class="circle" id="subtwo" onclick="myOpenTwo()">
+            <p class="icon" id="sutw">!</p>
+        </button>
+
+      </ul>
+    </div>
+
+
+        <div id="pop">
+          <div class="popbox">
+            <h2 class="news">Subscribe to our newsletter!</h2>
+            <h2 class="news" id="hiddennews">Thanks!</br>No spam, we promise. </br></br>(ﾉ^ヮ^)ﾉ*:・ﾟ✧</h2>
+            <input type="email" id="mail" value="" placeholder="Enter your e-mail">
+
+            <button type="button" class="submit" onclick="mySubmit()">Submit</button>
+            <button type="button" class="cancelpop" onclick="myCancel()">Cancel</button>
+
+            <button type="button" class="submit" id="close" onclick="myCloseAll()">Close</button>
+
+          </div>
+          <div class="popbox" id="popred">
+            <h2 class="news" id="error">You gotta type something </br>you dummy.</h2>
+          </div>
+
+          <div class="popbox" id="sad">
+            <h2 class="news" id="yousure">Are you sure...? </br></br>
+            ( ˃̶͈ ̯ ̜ ˂̶͈ˊ ) ︠³</h2>
+            <button type="button" class="submittwo" id="goback" onclick="myBack()">Nope</button>
+            <button type="button" class="cancelpoptwo" onclick="myBye()">Yep</button>
+          </div>
+        </div>
+
+        <div id="poptwo">
+          <div class="popboxtwo">
+            <h2 class="newstwo" id="ntwo">Report a bug ∑(;°Д°)</h2>
+            <h2 class="newstwo" id="hiddennewstwo">Thanks for letting us know!</br></br>We're not Bluehole, </br>we actually fix things. </br></br>(*•̀ᴗ•́*)و ̑̑</h2>
+            <textarea id="bug" value="" placeholder="What's the problem?"></textarea>
+
+            <div class="popboxtwo" id="popredtwo">
+              <h2 class="newstwo" id="error">You gotta type something </br>you dummy.</h2>
+            </div>
+
+            <button type="button" class="submit" id="sutwo" onclick="mySubmittwo()">Submit</button>
+            <button type="button" class="cancelpop" id="cantwo" onclick="myCanceltwo()">Cancel</button>
+
+            <button type="button" class="submit" id="closetwo" onclick="myCloseAlltwo()">Close</button>
+
+        </div>
+      </div>
+
+    <a href="index.html">
+      <div class="logo">
+        <p class="gg">GG</p>
+        <p class="wp">WP</p>
+      </div>
+    </a>
+
+    <div class="parallax" id="bgthree"></div>
+
+    <div class="rightside">
+      <h1 class="allheader">Player Unknown Battlegrounds</h1>
+      <p class="revbody">Newcomers who don’t religiously monitor video game trends can grok the beginning, middle and end of their first match. Players float onto an island, raid vaguely Eastern European towns or dusty ramshackle forts for randomized gear, and stay within the confines of an electric blue circle that slowly shrinks the map from miles of open terrain to a single square foot, forcing all survivors into the limited safe space. Along the way to the center of the circle, the player eliminates the competition — or allows it to fight amongst itself. Whether the player is sniping from a distant cliff, going house to house with a shotgun or simply hiding in the brush, the number of survivors will inevitably tick down as the blue circle pushes them into a spot like a giant trash compactor of conflict.</br></br>
+      A few hours into Battlegrounds, you get the sneaking sensation that everything, even the smallest detail, has a purpose. For example, every door is closed when a match begins, so doors exist as doors, but when spotted open, also serve as warnings that you aren’t the first person to arrive at a home. Military bases and cities house powerful weapons, but that attracts more players, and thus more conflict. For a time, high-level players began to memorize the direction in which cars would be parked by default, so they could tell an untouched vehicle from a honeypot. The more you play, the more you learn how to speak Battlegrounds. That’s the trick of Battlegrounds: a simple arc that — based on the aggressiveness of players, the randomness of weaponry and the spot in which the circle ultimately closes — can play out in nearly infinite ways, depending on how you read the situation from one second to the next. But like a procedural crime drama, PUBG always hits those same three key beats: Land on the island, gear up, survive to the end. Each round has a sense of progress, of growth, of construction. Of course, construction inspires destruction. We humans like watching things that took time to construct be cooly extinguished. Smashed Lego sets, controlled demolition, a player who’s collected the best weapons and armor getting pummeled with a frying pan. Because every player knows intimately the effort that goes into building a kit of weapons and armor, they too know the sweet joy of ending someone’s game, concluding their 15 or 20 minutes of raiding with a damp thwack to the skull at the last moment.</br></br>
+      In Call of Duty, even the losers get experience points, progressing them through some arcane skill tree. The same isn’t true in Battlegrounds, where players take great pleasure, consciously or not, from spoiling the fun of their peers. To survive a round is to savor the fact that 99 other people did not. The combo — progression and regression, construction and destruction, total success and total failure — gets at some deep existential pleasure, like rubber bands gradually being wrapped around a watermelon until it explodes. Battlegrounds never feels safe, because at any moment your hard work can be obliterated by a fearless newbie driving a buggy directly into your would-be hideout. Across a hundred hours of play, I’m most ashamed of the number of times somebody accidentally ran me over while I laid prone in a supposedly safe sniping perch.</br></br>
+      This central theme makes Battlegrounds particularly watchable. Since its informal launch in March, millions of players and non-players have flooded YouTube and Twitch to watch matches, whether they’re competitive, lighthearted or both. As with a good sport, viewership captures the spirit of Battlegrounds without requiring all the skill and practice necessary to not only participate, but create exciting moments. For would-be viewers, this isn’t like so many other esports that feel impenetrable to nonplayers, let alone nongamers. And for would-be players, this isn’t like so many first-person shooters of the past decade that created an artificial sense of skill, allowing players to upgrade weapons over time to conjure the illusion of self-improvement. Battlegrounds is only as forgiving as its players, which is to say, the meek shall not inherit its earth. Worse, some players have turned to hacks or controversial noninvasive tools and techniques (stream-sniping, modifying the color saturation) that provide a competitive edge. Some headaches, unfortunately, stem from odd design decisions and fixable blemishes. The game’s controls lack the smoothness of modern shooters, collecting items feels unintuitive, ammo and weapon information is obtuse, and high-end graphics actually serve as a disadvantage: Low-end graphics settings remove bushes and other greenery players might use as camouflage</br></br>
+      I am not the first person to say Battlegrounds is broken, nor am I the first to say it doesn’t really matter. It’s like when somebody tells you their favorite film is Apocalypse Now, but they can name all its historical inaccuracies, plot holes and production gaffes. Greatness can be, and often is, messy. There’s a case to be made that Battlegrounds is the defining game of 2017, both one of the year’s best games while also being the embodiment of the current video game industry. It’s a brash multiplayer shooter set in an open world, akin superficially to the medium’s best-selling franchises. PUBG’s also an indefinite work in progress, a de facto status it shares with most AAA games with massive teams operating on tight budgets and impossible deadlines.</br></br>
+      With PUBG’s official release, players finally gain access to its second map, a small and open desert stage that, on test servers, often stutters and crashes. And Xbox One owners now have access to a six-month-old version of the game, in early access on console, where its controls and performance leave even more to be desired. And once again, the general reaction is fury mixed with euphoria. Battlegrounds manages to exist within the crowded shooter genre in an unfinished state, and feel both fresh and creatively complete. From its early access launch on March 23 to its official launch today, Dec. 20, its creators have had nine months to repair, polish and expand on their baby. That the most substantial updates have been improved server performance, vaulting and car horns speaks to the confidence Greene and his squad have in the game’s foundation.</br></br>
+      And they should feel confident. Though it’s perpetually rough, you get the sense while playing Battlegrounds, both in March and today, that the developers are constructing the game from a blueprint found only in Greene’s own mind.</br></br>
+      Unlike most popular literature and films, most video games teach you how to read them, which is to say they’re as much about the content as how you experience that content. Many games rely on the familiar language of games — red barrels explode, blinking red spots on an enemy mark its vulnerability — only introducing a few new phrases of play along the way. But games that upend established genres or inspire entirely new ones teach new languages, which in turn get polished, contorted and improved upon by future games. Battlegrounds is the refinement of a new language of play, but what may earn it a spot in the video game canon is that conceptual efficiency. It isn’t accessible for every player, but it’s understandable. Anybody can easily learn to read this game, to watch it, to spot the tension and excitement and drama. Critics and fans have speculated on how PUBG will operate as an esport, whether or not its pacing works for competitive play. But that ignores the obvious fact: Battlegrounds works as entertainment. Sport or not, it has found its audience of players and viewers alike.</br></br>
+      We’ve already seen Battlegrounds’ first “cousin” in the form of Fortnite: Battle Royale, which beat the game to market on console. Expect to see more in the coming years, as every AAA publisher finds ways to put its brands, talent and money into exploiting the language of the battle royale genre. I have no doubt a few of these games will be great. One or two may be superior to Battlegrounds. But they will never capture the magic of first becoming fluent in this imperfectly perfect game.</p>
+    </div>
+
+
+  </body>
+  <script src="main.js"></script>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>GGWP</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-responsive.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <ul id="menu2">
+        <li class="side"><a href="index2.html">Upcoming</a></li>
+        <li class="side" id="rest1"><a href="index3.html">Games</a></li>
+        <li class="side" id="rest"><a href="index4.html">News</a></li>
+        <li class="side" id="rest"><a href="index5.html">About</a></li>
+
+
+        <button type="button" class="circle" id="sub" onclick="myOpen()">
+            <p class="icon">@</p>
+        </button>
+
+        <button type="button" class="circle" id="subtwo" onclick="myOpenTwo()">
+            <p class="icon" id="sutw">!</p>
+        </button>
+
+      </ul>
+    </div>
+
+
+        <div id="pop">
+          <div class="popbox">
+            <h2 class="news">Subscribe to our newsletter!</h2>
+            <h2 class="news" id="hiddennews">Thanks!</br>No spam, we promise. </br></br>(ﾉ^ヮ^)ﾉ*:・ﾟ✧</h2>
+            <input type="email" id="mail" value="" placeholder="Enter your e-mail">
+
+            <button type="button" class="submit" onclick="mySubmit()">Submit</button>
+            <button type="button" class="cancelpop" onclick="myCancel()">Cancel</button>
+
+            <button type="button" class="submit" id="close" onclick="myCloseAll()">Close</button>
+
+          </div>
+          <div class="popbox" id="popred">
+            <h2 class="news" id="error">You gotta type something </br>you dummy.</h2>
+          </div>
+
+          <div class="popbox" id="sad">
+            <h2 class="news" id="yousure">Are you sure...? </br></br>
+            ( ˃̶͈ ̯ ̜ ˂̶͈ˊ ) ︠³</h2>
+            <button type="button" class="submittwo" id="goback" onclick="myBack()">Nope</button>
+            <button type="button" class="cancelpoptwo" onclick="myBye()">Yep</button>
+          </div>
+        </div>
+
+        <div id="poptwo">
+          <div class="popboxtwo">
+            <h2 class="newstwo" id="ntwo">Report a bug ∑(;°Д°)</h2>
+            <h2 class="newstwo" id="hiddennewstwo">Thanks for letting us know!</br></br>We're not Bluehole, </br>we actually fix things. </br></br>(*•̀ᴗ•́*)و ̑̑</h2>
+            <textarea id="bug" value="" placeholder="What's the problem?"></textarea>
+
+            <div class="popboxtwo" id="popredtwo">
+              <h2 class="newstwo" id="error">You gotta type something </br>you dummy.</h2>
+            </div>
+
+            <button type="button" class="submit" id="sutwo" onclick="mySubmittwo()">Submit</button>
+            <button type="button" class="cancelpop" id="cantwo" onclick="myCanceltwo()">Cancel</button>
+
+            <button type="button" class="submit" id="closetwo" onclick="myCloseAlltwo()">Close</button>
+
+        </div>
+      </div>
+
+    <a href="index.html">
+      <div class="logo">
+        <p class="gg">GG</p>
+        <p class="wp">WP</p>
+      </div>
+    </a>
+
+    <div class="parallax"></div>
+
+    <div class="rightside">
+      <h1 class="allheader">League of Legends</h1>
+      <p class="revbody">League of Legends is not just a game: it's a cutthroat competitive digital sport where the winners roar in victory and the losers whimper in defeat. You don't need to play on the same level as the pros to experience the thrills of these online battlegrounds, however. Blending elements of action role-playing, real-time strategy, and tower defense games into an engrossing amalgam of awesome, League of Legends is a free-to-play game that ensures each play session yields a unique and explosive experience.</br></br>
+      Each player in a match controls a single champion. In the default game mode, Summoner's Rift, two teams of five champions are pitted against each another with the ultimate goal of destroying the opposing team's nexus, which is guarded by three lanes of towers. The catch is that at the start of a match, your champion is only level 1 with no items to back up his or her quest for victory. To power up to a level sufficient enough to take on the enemy's base, a champion must first focus on killing AI-controlled minions for gold and experience.</br></br>
+      The gold can be spent at the shop at each team's respective base in order to purchase items like the appropriately named B. F. Sword (a big freakin' sword), or its mage-friendly counterpart, the Needlessly Large Rod. Once you're appropriately equipped, your goal shifts from slaughtering the endless waves of minions to pushing your army down the lanes by destroying the towers. Of course, your enemies won't stand idly by and watch you destroy them. League of Legends erupts in beautiful savagery once the teams of five group and fight as a unified force. As the two teams engage one another in a semi-chaotic brawl, players dodge, duck, dip, dive, and dodge skill-shots and target abilities in order to survive and kill the opposition. Team fights can make or break a match, as victory in a single battle means there will be no resistance to the siege of towers for some time. Trailing teams may attempt to turtle around a tower in order to use its power to make up for their weakness, and then mount a defense that turns the tides of battle into an epic comeback.</br></br>
+      Team fights don't always erupt around towers, however. An elder lizard and an ancient golem both spawn in each team's jungle, and slaying one grants special sigil buffs. In the early stages of a game, some of the tensest moments occur when a team tries to steal away a buff from the opposing team. These skirmishes may not even result in a kill, but denying an enemy champion the mana regeneration of their ancient golem's blue sigil can grant a power play during which you may assert your dominance over the middle lane. Along the river, there are far more powerful neutral monsters which grant global gold to the team that bravely battles them. The dragon is a powder keg of early game team fights; combatants wage a war of vision-granting wards in order to ensure both, or neither, have vision over the dragon's pit so they may exterminate the beast out of sight of their foes.</br></br>
+      Late in the game, the powerful Baron Nashor serves as a cold war catalyst. You seek to kill him for the enormous stat boost he grants, but you also fear being nuked by a lurking enemy team, and so you wisely wait to fight him until you know your foes cannot contest. The stalemates over Baron are some of the most intense moments League of Legends has to offer, making the catharsis of overcoming a mighty challenge even greater. Beware, though, as failing the Baron fight or having the enemy steal the kill quickly turns the tide into a tsunami of aggression against you and your teammates.</p>
+    </div>
+
+
+  </body>
+  <script src="main.js"></script>
+</html>
