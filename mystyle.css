@@ -15,11 +15,6 @@ a{
 
 /*menu bar*/
 
-.trac{
-  height:100%;
-  width: 100%;
-  overflow: hidden;
-}
 .side a{
   text-decoration: none;
   color:black;
@@ -411,6 +406,13 @@ a{
   margin-left: 28vw;
 }
 
+.trac{
+  height:100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
 /*Upcoming Page*/
 
 #subpageh{
@@ -513,14 +515,16 @@ a{
   font-size: 4vw;
   outline:none;
   margin-top:10%;
+  width:47vw;
 }
 
 .search {
-  margin-top: 10%;
   width: 5vw;
+  margin-top:10%;
   cursor: pointer;
   background: transparent;
   position: absolute;
+  display: inline-block;
 }
 
 .autocomplete-items {

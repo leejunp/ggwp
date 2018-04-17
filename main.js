@@ -153,17 +153,14 @@ autocomplete(document.getElementById("myInput"), countries);
 
 function openWindow(e){
   event.preventDefault();
-  if($("#myInput").val()=="League of Legends"){
+  if($("#myInput").val()=="League of Legends" || $("#myInput").val()=="league of legends"){
     /*window.location.href = "index3-1.html";*/
     var winwin= window.open("index3-1.html");
   }
-  if($("#myInput").val()=="Overwatch"){
+  if($("#myInput").val()=="Overwatch" || $("#myInput").val()=="overwatch"){
     var winwin= window.open("index3-2.html");
   }
-  if($("#myInput").val()=="PUBG"){
-    var winwin= window.open("index3-3.html");
-  }
-  if($("#myInput").val()=="Player Unknown Battlegrounds"){
+  if($("#myInput").val()=="PUBG" || $("#myInput").val()=="Player Unknown Battlegrounds" || $("#myInput").val()=="player unknown battlegrounds", $("#myInput").val()=="pubg"){
     var winwin= window.open("index3-3.html");
   }
   else{
