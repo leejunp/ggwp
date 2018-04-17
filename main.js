@@ -148,7 +148,7 @@ function autocomplete(inp, arr) {
       });
 }
 /*figure out how to make this shit work*/
-var countries = ["League of Legends","Overwatch","PUBG"];
+var countries = ["League of Legends","Overwatch","PUBG","Player Unknown Battlegrounds"];
 autocomplete(document.getElementById("myInput"), countries);
 
 function openWindow(e){
@@ -161,6 +161,9 @@ function openWindow(e){
     var winwin= window.open("index3-2.html");
   }
   if($("#myInput").val()=="PUBG"){
+    var winwin= window.open("index3-3.html");
+  }
+  if($("#myInput").val()=="Player Unknown Battlegrounds"){
     var winwin= window.open("index3-3.html");
   }
   else{

@@ -15,6 +15,11 @@ a{
 
 /*menu bar*/
 
+.trac{
+  height:100%;
+  width: 100%;
+  overflow: hidden;
+}
 .side a{
   text-decoration: none;
   color:black;
@@ -33,7 +38,7 @@ a{
   position: fixed;
   height: 100%;
   overflow: auto;
-  box-shadow: -6px 0px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.1);
   right:0;
   width:80px;
   z-index: 5;
@@ -43,6 +48,10 @@ a{
   transform:rotate(90deg);
   margin-top:70px;
   font-size: 20px;
+}
+
+#rest2{
+  margin-top:90px;
 }
 
 #rest{
@@ -63,12 +72,12 @@ a{
   cursor: pointer;
   z-index: 3;
   position: absolute;
-  margin-top: 370px;
+  margin-top: 390px;
   border: none;
 }
 
 #subtwo{
-  margin-top:410px;
+  margin-top:430px;
 }
 
 .icon{
@@ -419,7 +428,7 @@ a{
   margin-bottom: 20vw;
   box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;
-  display: inline-block;
+  overflow: hidden;
 }
 
 .upgames:hover{
@@ -467,12 +476,14 @@ a{
 
 #upsecond{
   margin-top:50vw;
-  margin-bottom: 20vw;
 }
 
 #upthird{
   margin-top:80vw;
-  margin-bottom: 20vw;
+}
+
+.margbot{
+  height:110vw;
 }
 
 /*game search engin*/
@@ -544,7 +555,6 @@ a{
 .rightside{
   margin-left: 17%;
   margin-top:90px;
-  margin-bottom: 40px;
   position: absolute;
   display: block;
   width: 60%;
@@ -589,4 +599,59 @@ a{
 
 #bgthree{
   background-image: url("Images/PUBG.jpg");
+}
+
+#bgfour{
+  background-image: url("Images/Monster.jpg");
+}
+
+#bgfive{
+  background-image: url("Images/GodofWar.jpg");
+}
+
+#bgsix{
+  background-image: url("Images/Darksider.jpg");
+}
+
+.nextgame{
+  float: left;
+  display: block;
+  right:5vw;
+  bottom:0;
+  color:#E55E5E;
+  margin-top:5vw;
+  margin-bottom: 6vw;
+  float:right;
+  font-size: 2vw;
+}
+
+.nextgame::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #E55E5E;
+    transition: width .3s;
+}
+
+.nextgame:hover::after {
+    width: 100%;
+}
+
+/*About Me*/
+
+.abtimg{
+  margin-top:13vw;
+  float: right;
+  margin-right: 20vw;
+  width: 40vw;
+}
+
+.abtme{
+  line-height: 35px;
+  font-weight: lighter;
+  margin-left: 40px;
+  margin-top:20vw;
+  position: absolute;
+  width: 36vw;
 }

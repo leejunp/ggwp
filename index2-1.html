@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>GGWP</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-responsive.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <ul id="menu2">
+        <li class="side"><a href="index.html">Home</a></li>
+        <li class="side" id="rest2"><a href="index2.html">Upcoming</a></li>
+        <li class="side" id="rest1"><a href="index3.html">Games</a></li>
+        <li class="side" id="rest"><a href="index5.html">About</a></li>
+
+
+        <button type="button" class="circle" id="sub" onclick="myOpen()">
+            <p class="icon">@</p>
+        </button>
+
+        <button type="button" class="circle" id="subtwo" onclick="myOpenTwo()">
+            <p class="icon" id="sutw">!</p>
+        </button>
+
+      </ul>
+    </div>
+
+
+        <div id="pop">
+          <div class="popbox">
+            <h2 class="news">Subscribe to our newsletter!</h2>
+            <h2 class="news" id="hiddennews">Thanks!</br>No spam, we promise. </br></br>(ﾉ^ヮ^)ﾉ*:・ﾟ✧</h2>
+            <input type="email" id="mail" value="" placeholder="Enter your e-mail">
+
+            <button type="button" class="submit" onclick="mySubmit()">Submit</button>
+            <button type="button" class="cancelpop" onclick="myCancel()">Cancel</button>
+
+            <button type="button" class="submit" id="close" onclick="myCloseAll()">Close</button>
+
+          </div>
+          <div class="popbox" id="popred">
+            <h2 class="news" id="error">You gotta type something </br>you dummy.</h2>
+          </div>
+
+          <div class="popbox" id="sad">
+            <h2 class="news" id="yousure">Are you sure...? </br></br>
+            ( ˃̶͈ ̯ ̜ ˂̶͈ˊ ) ︠³</h2>
+            <button type="button" class="submittwo" id="goback" onclick="myBack()">Nope</button>
+            <button type="button" class="cancelpoptwo" onclick="myBye()">Yep</button>
+          </div>
+        </div>
+
+        <div id="poptwo">
+          <div class="popboxtwo">
+            <h2 class="newstwo" id="ntwo">Report a bug ∑(;°Д°)</h2>
+            <h2 class="newstwo" id="hiddennewstwo">Thanks for letting us know!</br></br>We're not Bluehole, </br>we actually fix things. </br></br>(*•̀ᴗ•́*)و ̑̑</h2>
+            <textarea id="bug" value="" placeholder="What's the problem?"></textarea>
+
+            <div class="popboxtwo" id="popredtwo">
+              <h2 class="newstwo" id="error">You gotta type something </br>you dummy.</h2>
+            </div>
+
+            <button type="button" class="submittwo" id="sutwo" onclick="mySubmittwo()">Submit</button>
+            <button type="button" class="cancelpoptwo" id="cantwo" onclick="myCanceltwo()">Cancel</button>
+
+            <button type="button" class="submit" id="closetwo" onclick="myCloseAlltwo()">Close</button>
+
+        </div>
+      </div>
+
+    <a href="index.html">
+      <div class="logo">
+        <p class="gg">GG</p>
+        <p class="wp">WP</p>
+      </div>
+    </a>
+
+    <div class="parallax" id="bgfour"></div>
+
+    <div class="rightside">
+      <h1 class="allheader">Monster Hunter World</h1>
+      <p class="revbody">Does that mean you should play Monster Hunter: World, even if you’ve never been able to hang with the franchise before? The game certainly remains a challenge, but one much easier to recommend to all types of players.</br></br>
+      The Monster Hunter franchise is known to rebuff new players. Liking Monster Hunter, in some player’s minds, is a special dedication, akin to liking cross-country skiing or watching the entire Cremaster Cycle in one weekend. You admire the folks that do it, but you also suspect they might be unrelenting masochists. In this capacity, Monster Hunter: World, a game designed to be more inviting than its predecessors, is, for a lot of folks, the first modern incarnation of a franchise they’ve long been tantalized with but overwhelmed by. As someone from that group, I’m here to declare that Capcom has achieved its goal. Monster Hunter: World is not easy. It’s still layered with complex systems and still asks its players to invest time and knowledge. But World has sanded down the franchise’s most esoteric edges. You’ll spend more time wrestling with monsters than wrestling archaic control schemes.</br></br>
+      For all its complexity, the point of Monster Hunter is right there in the title: you hunt monsters. Your hunter, customized on a fairly robust character creator, starts the game journeying to a New World full of gorgeous, lush ecosystems teeming with creatures great and small (though usually just gigantic and angry). Your main foe is Zorah Magdaros, a magma-encrusted beast the size of a skyscraper, but getting an opportunity to slaughter it means tearing through a menagerie of monsters, each distinct and beautifully characterized, gradually accumulating the skill and gear necessary for an epic battle. The game’s story, hinged on Zorah’s movements, is a weak spot, a thin motivation to keep you moving forward. No matter. Monster Hunter is a game of moments, and there are plenty of stand-out characters to meet from the civilized sections of World’s hubs. Most of the truly memorable ones are cute-but-deadly cat Palicos, who help you along your way while also shouting a lot of cat-related puns. Monster Hunter: World shrewdly allows its fabulous beasts to take center stage, never letting story or cookie-cutter quest givers interfere with the promise of the game’s crux. Each monster, from the moment you first spot it across a clearing to the point you’ve turned its parts into spectacular armor, is distinct thanks to unique visual designs and many special ways each beast can kill you. I won’t forget the first time a Pukei-Pukei — a giant, green bird with a cartoonish face — vomited poison all over me, lolling its massive, pink tongue as a weapon. Or when the turtle-faced Radobaan rolled into me with its pokey armor of five-foot spikes, which I eventually shattered to nubs.
+      </br></br>
+      The monsters have an uncanny style of movement that gives them life, while also communicating how you’re doing in a fight. Monsters will drool purple slime when you’ve poisoned them, or limp along when you’ve worn them down. The animations couple with a smart, unpredictable AI that won’t stop a monster from chasing you up a tree, running away as you wail on its back, or jumping in to a another monster’s battle, which would usually send me packing until they finished. This feature alone offers so much promise for battles branching in unexpected ways; I’m excited for the inevitable clips on YouTube. Just as the monsters are varied, so are the weapons used to demolish them. There are 14 different weapon classes in Monster Hunter: World, and each feels radically different, as if you’re changing your player class every time you pick a new one. I grabbed the hammer, which I learned from my pre-review was particularly satisfying to use when I built up a charge, ran into battle and unleashed a tornado of swings on the monster’s head and front legs; I also enjoy the insect glaive, a long blade that sews together flowing combos, including one where you can vault over the monster and smoothly transition into an air dash. It’s tempting to master each ranged and melee weapon, though some have high ceilings of difficulty, like the combo-focused charge blade, which transitions from sword and shield to axe, allowing you to unleash stored-up energy. The game does a better job than previous entries of explaining weapons’ basic functions and showing players easy combos, but I still occasionally wanted to hit up YouTube for a tutorial on how to master more complex moves. Of course, seeing how well another hunter handles a weapon is a good lesson too, and one of many advantages to playing the game with a fully stacked party of four. Nearly every quest in Monster Hunter: World works with one to four players. Co-operative multiplayer isn’t flawless. For example, if I have to watch a cutscene on a main story quest, every other player is forced to wait to join the quest until after I’m done. But overall, the transition between multiplayer quests is seamless, meaning players can run through a series of quests and strategize and plan on voice chat in between. This is clutch, since more players open up the game for more sneaky ways of capturing or killing the monster with traps or bombs that are harder to execute on your own. </br></br>
+      If you feel totally overwhelmed during a mission, World adds an SOS flare, which calls other players into battle. It brings immediate aid, as responding players should join you right away, but I wasn’t able to test it during the review period due to low server populations. There’s also your ever-ready in-game sidekick, your Palico. Not only is this cute cat extremely customizable at the start of the game (get ready to lose 30 minutes customizing a cat friend!), you’ll also craft them armor and weapons that can be tailored to each monster’s weaknesses. Yes, there is an element of playing dress-up with a cute cat, but my Palico Vegas (named for my own cat, of course) pulled me out of plenty of jams, and in my opinion, deserved to look nice while doing it.</br></br>The streamlined additions to multiplayer are just one of the massive quality-of-life improvements evident in Monster Hunter: World. Many of the other tweaks are evident when I began to tackle all the things needed to maintain and strengthen my hunter. Crafting is a huge element in the game, as you’ll gather plants, mushrooms, berries and more to create healing items, ammunition and traps. Gathering used to be arduous, as you’d have to wait for an animation to play out every time you wanted to pick the dang herb used in the game’s most basic healing potions. Now you can quickly grab ingredients as you explore, and you can even set the most important necessities to automatically craft once you’ve picked up the required ingredients, meaning less time in menus when you’re on a quest. When you’ve returned and need to do more serious crafting, recipes with pyramids of required sub-ingredients will let you just craft those without leaving that screen. The other key loop in the game lies in all the armor you can craft, and the massive trees of weapon upgrades available. Most armor comes from harvesting parts from monsters, with some extra bits of ore or bone thrown in for good measure. Each set of armor comes with strengths to different types of elements, but what will surely sway many players between one piece and the next is the look; there are certain sets I still covet. Since there is no feasible way to get a full five-piece set from killing a monster one time, it takes multiple kills to collect all the scales, membranes, quills and pelts required. This could be where World begins to feel like a chore, but instead of making players randomly grind for loot, you’re presented with a plan. A coveted piece of armor’s pieces can be added to your wishlist, and researching your monster quarry, by examining its tracks and other leavings while in the field, unlock information about how you can get the exact piece you need. Want Pukei-Pukei’s quills to create a poison weapon? Your monster research shows you can get them by focusing attacks on that monster’s head
+    </p>
+    <a class="nextgame" href="index2-2.html">God of War</a>
+    </div>
+
+
+  </body>
+  <script src="main.js"></script>
+</html>

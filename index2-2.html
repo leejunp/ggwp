@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>GGWP</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-responsive.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <ul id="menu2">
+        <li class="side"><a href="index.html">Home</a></li>
+        <li class="side" id="rest2"><a href="index2.html">Upcoming</a></li>
+        <li class="side" id="rest1"><a href="index3.html">Games</a></li>
+        <li class="side" id="rest"><a href="index5.html">About</a></li>
+
+
+        <button type="button" class="circle" id="sub" onclick="myOpen()">
+            <p class="icon">@</p>
+        </button>
+
+        <button type="button" class="circle" id="subtwo" onclick="myOpenTwo()">
+            <p class="icon" id="sutw">!</p>
+        </button>
+
+      </ul>
+    </div>
+
+
+        <div id="pop">
+          <div class="popbox">
+            <h2 class="news">Subscribe to our newsletter!</h2>
+            <h2 class="news" id="hiddennews">Thanks!</br>No spam, we promise. </br></br>(ﾉ^ヮ^)ﾉ*:・ﾟ✧</h2>
+            <input type="email" id="mail" value="" placeholder="Enter your e-mail">
+
+            <button type="button" class="submit" onclick="mySubmit()">Submit</button>
+            <button type="button" class="cancelpop" onclick="myCancel()">Cancel</button>
+
+            <button type="button" class="submit" id="close" onclick="myCloseAll()">Close</button>
+
+          </div>
+          <div class="popbox" id="popred">
+            <h2 class="news" id="error">You gotta type something </br>you dummy.</h2>
+          </div>
+
+          <div class="popbox" id="sad">
+            <h2 class="news" id="yousure">Are you sure...? </br></br>
+            ( ˃̶͈ ̯ ̜ ˂̶͈ˊ ) ︠³</h2>
+            <button type="button" class="submittwo" id="goback" onclick="myBack()">Nope</button>
+            <button type="button" class="cancelpoptwo" onclick="myBye()">Yep</button>
+          </div>
+        </div>
+
+        <div id="poptwo">
+          <div class="popboxtwo">
+            <h2 class="newstwo" id="ntwo">Report a bug ∑(;°Д°)</h2>
+            <h2 class="newstwo" id="hiddennewstwo">Thanks for letting us know!</br></br>We're not Bluehole, </br>we actually fix things. </br></br>(*•̀ᴗ•́*)و ̑̑</h2>
+            <textarea id="bug" value="" placeholder="What's the problem?"></textarea>
+
+            <div class="popboxtwo" id="popredtwo">
+              <h2 class="newstwo" id="error">You gotta type something </br>you dummy.</h2>
+            </div>
+
+            <button type="button" class="submittwo" id="sutwo" onclick="mySubmittwo()">Submit</button>
+            <button type="button" class="cancelpoptwo" id="cantwo" onclick="myCanceltwo()">Cancel</button>
+
+            <button type="button" class="submit" id="closetwo" onclick="myCloseAlltwo()">Close</button>
+
+        </div>
+      </div>
+
+    <a href="index.html">
+      <div class="logo">
+        <p class="gg">GG</p>
+        <p class="wp">WP</p>
+      </div>
+    </a>
+
+    <div class="parallax" id="bgfive"></div>
+
+    <div class="rightside">
+      <h1 class="allheader">God of War</h1>
+      <p class="revbody">
+        Last we saw Kratos, he still enjoyed getting hammered on a bottle of red, participating in a well-lit orgy and slaying Greek gods in ways that a teenager might storyboard onto the back of a ruled notebook. He and his franchise thrived on adrenaline, any inner turmoil serving as a springboard for ultraviolence, rather than an emotional well to be drawn from. Times change, and the new God of War, part sequel (the story continues from where it left off) and part reboot (the adventure is slower and the characterization more thoughtful), has more heroic ambitions for the notorious antihero. Kratos is a parent now, older, calmer and from what I can tell, into the tiny home fad. He’s taken part in an ancient form of witness protection by moving north and living in a modest cabin in the forests of the Norse realm of Midgard. Kratos is, however, no less a magnet for domestic tragedy. His second wife, the mother to his son Atreus, has just died and been cremated. And so, this particular adventure, at the outset at least, has Kratos and his tween on a quest to fulfill her final wish: that her ashes be carried to the highest peak in the realm. (Yes, the game kicks off with a spin on the “woman in the fridge,” but mercifully, things become more complicated as the story unpacks itself.)
+        </br></br>
+        The gods and the past get in the way of good intentions, and rather quickly, Kratos and his son find themselves vivisecting undead soldiers, elves, trolls, ancients, and a number of other mythological creatures with silly names and even siller characteristics (e.g., the tatzelwurm, a poison-spitting, tunnel-burrowing walrus-tiger hybrid). Thank goodness. For all the changes to tone and ethos, this is still a God of War game, and you can feel that in the joy of the combat. Kratos doesn’t punch; he pulverizes. He moves like a boxer, shoulders set, legs grapevining back and forth. The way his ax zips into an enemy’s skull, then back to his hand, is so smooth and natural that it’s easy to overlook how challenging it must have been to animate such a thing. (Fortunately, animation director Kristjan Zadziuk explains how the developers likely did it in this YouTube video.) In the early hours, God of War feels, if not like a follow-up to the original game, then a creative revamping. As the 2005 God of War took the individual great combat ideas from its time and blended them together, so does the new God of War for a new era. But the game doesn’t set into any style for too long. Without warning, the linear adventure, focused on fights and dramatic showdowns, bursts wide open, and the preset paths of past entries give way to a new, grand hub, its spokes taking the crew far beyond Midgard.
+        </br></br>
+        The main objective must be attended to, sure, but not now, not necessarily. Kratos’ goal has weight, but the world isn’t literally rotating around his every decision — an increasingly common and welcome change in AAA blockbusters. This relaxed pace frees you to explore, and it frees Kratos to focus more on parenting than on saving the planet. On more than one occasion, he threatens a bratty Atreus that he will turn this canoe around and head straight back home, and it feels like he might actually do it. In this way, the game has less in common with Homer’s epic Odyssey than with last year’s memoir An Odyssey by Daniel Mendelsohn, which serves as a rich, therapeutic and exploratory look at the author’s relationship with his father through the lens of the classical text. And like that book, God of War does it with wit and grace. The dialogue doesn’t put on a faux-Shakespearean haughtiness. Atreus talks like a kid, sweet and also selfish. And Kratos acts, in turn, like a father who has no clue how to be a parent, and yet feels a profound need to protect this boy from the world and his own bloodline. God of War is awesome at times, in the true sense of the word, but its heart lives in the small ways this man and this boy are building and unbuilding their relationship.
+        </br></br>
+        All of which is to say that the game is relaxed to the point of bordering on indifferent. Many of God of War’s most interesting surprises are optional, branching from the game’s sturdy throughline: secret rooms giving way to hidden caverns winding to towering statues or belligerent dragons — which I would have missed altogether had I just followed my compass to the next objective. You don’t find collectibles; you find entire chunks of story tucked behind a mossy wall or under a tropical island. God of War, like last year’s Nier: Automata and The Legend of Zelda: Breath of the Wild, rewards the player who inspects its immaculately designed world as if it were a hidden object game.
+        Also optional are the spoken tales I mentioned earlier, the ones told by the disembodied head. Whenever you step from the canoe onto dry land, the head hushes up, and like a courteous tour guide, promises to eventually pick up his yarns where he left off. I got the most enjoyment from letting him finish, though. This applies to everybody Kratos meets during the journey. I encourage you to hang in the water. Lounge around the shops. Don’t rush into battle when characters are speaking to you. Set down the controller, take in the scenery and listen to what they have to say. By journey’s end, of course, the fate of the world is at play — baby, bathwater — at which point God of War is thoroughly spiced with the gristle of Game of Thrones. Ice zombies, a skeuomorphic tabletop map, some occasionally stilted dialogue about the history of powerful family legacies that had hitherto been mentioned only in passing. The game’s one glaring weakness is this occasional mimicry of the iconography established by George R.R. Martin and his fantasy forebears. The art design excels when it tries something different, such as the buglike dark elves and ghastly white elves, neither of which look like elvish cliches.
+      </br></br>
+        The rare riff on other fantasy epics would be more bothersome if the game didn’t so confidently hold its own alongside its contemporaries when it comes to sheer scale. I’m hesitant to call the biggest moments in God of War setpieces, since they don’t operate in the fashion setpieces normally would. Some involve heavily choreographed fights and gargantuan explosions. Others, however, make Kratos a diminutive object in the frame, like when he’s dwarfed by a sea serpent that, coiled, must be the size of a small city. One of the most memorable moments has Kratos (with the player maintaining control) parting a lake, creating long chasms of waterfalls that extend into the horizon. No blood or guts, just beauty. These visuals don’t boil down to glorified matte paintings. Unlike in other action games, where spectacle happens around the hero while they fight inside a controlled arena, Kratos and Atreus step into these dense backgrounds. That massive lane in the lake becomes a pathway to an elven kingdom, filled with fights and puzzles. The giant serpent rests languidly around the world’s central hub. And the camera never cuts away. There are no load screens. From the opening frame, through the credits and beyond, the camera lingers behind Kratos, the story proceeding in real time. God of War takes place in one shot. The unedited long take is a bit stress-inducing, at least at first, like watching a movie and not being allowed to blink. But as the game established its more chill pace, I appreciated the refusal to cut away from Kratos and company. I felt more like a participant in the world, rather than someone watching the adventure from outside it.
+          </br></br>
+          As a technical achievement, the single shot is mind-bending, a never-ending “how did they pull this off?” Open-world sequences seamlessly transition into cinematic showdowns into lengthy trips in the canoe — without a stutter. Because the game can’t cut away, or skip ahead in time or space, you must follow Kratos on every step from one location to the next. As a result of the decision, the world is big and condensed all at the same time. There’s a lot to see, but God of War’s designers have been creative in how they minimize backtracking. Generally, you can see where you’re going or where you came from, as paths through castles and cliffsides have you doubling back, creating shortcuts or secret passages back to the main route. (You eventually gain access to a tool that makes travel simpler and faster, all without breaking the game’s single long camera take. It’s neat.)</br></br>
+          It sounds Dark Souls-ish because it is Dark Souls-ish. That comparison extends to the combat, which — especially in the extremely difficult postgame content — does a good (if imperfect) impression of everybody’s favorite masocore series. Borrowed inspiration isn’t limited to the Souls franchise. Fights involve an unusual but effective hodgepodge of genres: Ax melee attacks handle like an old-fashioned beat-’em-up; ax throws work like a sniper rifle, the weapon returning to Kratos with the tap of a button; Atreus (whom you can command to fire arrows) behaves almost like an RPG party member, flanking large enemies and stunning packs into position for attacks.
+          In fact, God of War takes a good deal from role-playing games. Gear can be purchased or found, then upgraded or modified, to increase Kratos’ status, which is displayed on the pause screen like a tabletop character sheet. The ax, the shield and the bow have upgrade trees. Kratos’ fanciest attacks are called runics, and you assign one light and one heavy runic attack at a time. Runic attacks replace complex combos, and are performed with a simple tap of the shoulder buttons. No pressure to master reflexes and motor skills. Instead, precious brain juice can be spent on strategy: Does a zone call for attacks that stun large groups of enemies, setting up a sequence of brutal takedowns, or does a big boss warrant narrow but powerful damage-dealing blows? Tough battles are made easy when treated like puzzles to be solved with the right combat approach.</br></br>
+          None of this is explicitly clarified by the game, nor does it need to be. You won’t see tutorials, just small reminders of which button corresponds to which move. God of War embraces a certain degree of ambiguity, freeing the player to discover their own methods, and tackle the journey how they see fit. Same goes for the story. Kratos and Atreus’ quest takes them in and out of the dramas of other people and kingdoms, and their involvement isn’t clearly rationalized as good or bad. Early in the game, Kratos tells Atreus a tale of sailors who drank seawater and believed they heard the call of their families, the voices both pleasing them and driving them mad. It’s a brief moment, but it subtly establishes a distrust of one’s perception that’s reflected and refracted by the central storyline. This ambiguity works because it’s intentional, not a byproduct of poor storytelling. Even small details pay off. Brief anecdotes parallel core themes. Seemingly inconsequential decisions have major repercussions. Like the game’s world, the story folds in on itself, inviting you to re-examine where you’ve been and reconsider where you’re going. There’s a musicality to the structure: The central hub that Kratos and Atreus visit between adventures acts like a chorus, with each spoke of their journey its own verse. Atreus and other characters gently guide the player toward priorities, though they just as often mention a bundle of side quests that are just as worthy of your time. Simple chatter usually has a purpose, either moving the story forward, or nudging you, wittingly or unwittingly, in a new direction.
+          I’ll skip spoilers and specifics, but even core mechanical design choices, things that seem gamey and intangible, are given narrative purpose by the end. God of War is, in a single word, holistic. Every aspect is excellent on its own, but more importantly, it all serves and accentuates the larger vision.</br></br>
+          A decade ago, director Cory Barlog helped establish the God of War franchise as an iconic gory and debaucherous video game romp. While its antihero, Kratos, had pathos (he killed his wife and daughter in a fit of rage, his skin forever grayed by their ashes), it served little dramatic purpose, rather existing as a grimdark excuse for his god-slaying and orgy-having ways. Barlog — now older, a father — has returned to the series with a small army of talented designers, many of whom served on the earlier games, to make good on that rich but neglected potential at the francises’ core. There’s still plenty of gore, but now the guts have meatiness. Some die-hard fans may fear this isn’t really God of War. I suppose they’re right. It’s even better.
+      </p>
+      <a class="nextgame" href="index2-3.html">The Darksiders III</a>
+    </div>
+
+
+  </body>
+  <script src="main.js"></script>
+</html>
