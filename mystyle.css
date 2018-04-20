@@ -494,6 +494,8 @@ a{
   margin-top: 20%;
   margin-left: 20%;
   position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .autocomplete {
@@ -520,11 +522,10 @@ a{
 
 .search {
   width: 5vw;
-  margin-top:10%;
   cursor: pointer;
   background: transparent;
-  position: absolute;
-  display: inline-block;
+  padding: 0;
+  
 }
 
 .autocomplete-items {

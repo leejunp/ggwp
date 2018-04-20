@@ -152,21 +152,23 @@ var countries = ["League of Legends","Overwatch","PUBG","Player Unknown Battlegr
 autocomplete(document.getElementById("myInput"), countries);
 
 function openWindow(e){
-  event.preventDefault();
   if($("#myInput").val()=="League of Legends" || $("#myInput").val()=="league of legends"){
-    /*window.location.href = "index3-1.html";*/
-    var winwin= window.open("index3-1.html");
+    window.location.href = "index3-1.html";
+    return false;
   }
   if($("#myInput").val()=="Overwatch" || $("#myInput").val()=="overwatch"){
-    var winwin= window.open("index3-2.html");
+    window.location.href ="index3-2.html";
+    return false;
   }
   if($("#myInput").val()=="PUBG" || $("#myInput").val()=="Player Unknown Battlegrounds" || $("#myInput").val()=="player unknown battlegrounds", $("#myInput").val()=="pubg"){
-    var winwin= window.open("index3-3.html");
+    window.location.href ="index3-3.html";
+    return false;
   }
   else{
-    /*window.location.href="index3-4.html";*/
-    var winwin= window.open("index3-4.html");
+    window.location.href="index3-4.html";
+    return false;
   }
+  return false;
 }
 
 $("#myInput").keyup(function(event) {
