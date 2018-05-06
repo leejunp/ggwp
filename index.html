@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style-responsive.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
-  <body>
+  <body class="phm">
     <div class="menu">
       <ul id="menu2">
         <li class="side"><a href="index.html">Home</a></li>
@@ -29,7 +29,32 @@
       </ul>
     </div>
 
+    <div class="menuall">
+      <nav role="navigation">
+        <div id="menuToggle" class="wh">
+            <input type="checkbox" />
 
+              <span></span>
+              <span></span>
+              <span></span>
+
+                <ul id="menu">
+                  <li class="side"><a href="index.html">Home</a></li>
+                  <li class="side" id="rest2"><a href="index2.html">Upcoming</a></li>
+                  <li class="side" id="rest1"><a href="index3.html">Games</a></li>
+                  <li class="side" id="rest"><a href="index5.html">About</a></li>
+
+                  <button type="button" class="circle" id="sub" onclick="myOpen()">
+                      <p class="icon">@</p>
+                  </button>
+
+                  <button type="button" class="circle" id="subtwo" onclick="myOpenTwo()">
+                      <p class="icon" id="sutw">!</p>
+                  </button>
+                </ul>
+        </div>
+      </nav>
+    </div>
 
     <div id="pop">
       <div class="popbox">
@@ -90,15 +115,7 @@
 
       <h1 class="mainhead">Honest</br>Game Reviews</h1>
 
-      <ul class="links">
-        <li class="social" id="soone"><a href="https://www.facebook.com"target="_blank">Facebook</a></li>
-        <div class="line"></div>
-        <li class="social"><a href="https://twitter.com" target="_blank">Twitter</a></li>
-        <div class="line"></div>
-        <li class="social"><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-        <div class="line"></div>
-        <li class="social"><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-      </ul>
+
       <p class="mainbod">Game reviews, patch notes, you say it and we'll write it; one site where you can find any and every game related information.</p>
     </div>
 

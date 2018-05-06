@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+
+@media (min-width: 579px){
+
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -14,6 +17,10 @@ a{
 }
 
 /*menu bar*/
+
+#menuToggle{
+  display:none;
+}
 
 .side a{
   text-decoration: none;
@@ -349,34 +356,11 @@ a{
 .mainhead{
   color: white;
   font-size: 4.1vw;
-  margin-top:50%;
+  margin-top:60%;
   margin-left:40px;
   line-height: 1;
 }
 
-.links, .social{
-  text-decoration: none;
-}
-
-.links{
-  list-style-type: none;
-  margin-left: 40px;
-  margin-top: -2vw;
-  padding: 0;
-  overflow: auto;
-  color: white;
-  width: 28vw;
-}
-
-.social{
-  float:left;
-  margin-left: 23px;
-  font-weight: lighter;
-}
-
-#soone{
-  margin-left: 0px;
-}
 
 .line{
   float: left;
@@ -392,7 +376,7 @@ a{
 .mainbod{
   width:28vw;
   margin-left: 40px;
-  margin-top:150px;
+  margin-top:80px;
   color:white;
   font-weight: lighter;
   line-height: 30px;
@@ -401,7 +385,7 @@ a{
 .tracer{
   position: absolute;
   z-index: 4;
-  width: 70vw;
+  width: 1200px;
   margin-top:3vw;
   margin-left: 28vw;
 }
@@ -445,8 +429,11 @@ a{
 
 .upgamesbod{
   width: 45vw;
+  height:17vw;
   margin-left:42vw;
-  margin-top:3vw;
+  margin-top:1.5vw;
+  position: absolute;
+  overflow: hidden;
 }
 
 .upgamesp{
@@ -525,7 +512,7 @@ a{
   cursor: pointer;
   background: transparent;
   padding: 0;
-  
+
 }
 
 .autocomplete-items {
@@ -659,4 +646,6 @@ a{
   margin-top:20vw;
   position: absolute;
   width: 36vw;
+}
+
 }

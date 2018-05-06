@@ -176,3 +176,12 @@ $("#myInput").keyup(function(event) {
         $(".search").click();
     }
 });
+
+// function chec(){
+//   if (document.getElementsByClassName(".check").checked = true){
+//     $('.logo').css({'color': 'black'});
+//   }
+//   else{
+//     $('.logo').css({'color': 'white'});
+//   }
+// };
